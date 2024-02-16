@@ -80,7 +80,8 @@ echo "<br />Приятного рабочего дня, вам!";
 
 #Задание 4.
 
-'switch(date("l")){
+```php
+switch(date("l")){
     case "Monday":
         echo "Сегодня " . date("l") . "," . date("j, n, Y");
         break;
@@ -102,6 +103,7 @@ echo "<br />Приятного рабочего дня, вам!";
     case "Sunday":
         echo "Сегодня " . date("l") . "," . date("j, n, Y");
         break;
-}'
+}
+```
 
 ![alt text](images/image6.png)

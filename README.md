@@ -178,4 +178,4 @@ table.iksweb th {
 }
 ```
 
-![alt text](images/images7.png)
+![alt text](images/image7.png)

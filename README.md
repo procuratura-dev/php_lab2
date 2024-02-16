@@ -107,3 +107,75 @@ switch(date("l")){
 ```
 
 ![alt text](images/image6.png)
+
+#Домашнее задание
+```php
+$today = date("l");
+
+if($today == "Monday" || "Wednesday" || "Friday"){
+    $table_date1 = "8:00-12:00";
+    $table_date2 = "Нерабочий день";
+}
+elseif($today == "Tuesday" || "Thursday" || "Saturday"){
+    $table_date1 = "Нерабочий день";
+    $table_date2 = "12:00-16:00";
+}
+else{
+    $table_date1 = "Нерабочий день";
+    $table_date2 = "Нерабочий день";
+}
+```
+```html
+<table class="iksweb">
+	<tbody>
+		<tr>
+			<td class="header" colspan="3"><b>График работы докторов, каб. 333</td>
+		</tr>
+		<tr class="line_color">
+			<td>П.н.</td>
+			<td>Фамилия, имя</td>
+			<td>График</td>
+		</tr>
+		<tr>
+			<td>1.</td>
+			<td>Аксенти Елена</td>
+			<td><?php echo $table_date1; ?></td>
+		</tr>
+		<tr>
+			<td>2.</td>
+			<td>Петрова Мария</td>
+			<td><?php echo $table_date2; ?></td>
+		</tr>
+	</tbody>
+</table>
+```
+```css
+table.iksweb{
+	width: 60%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border: 1px solid #595959;
+}
+table.iksweb td,table.iksweb th {
+	padding: 3px;
+	width: 30px;
+	height: 35px;
+}
+table.iksweb th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+.header{
+    text-align: center;
+    font-size: larger;
+}
+.line_color{
+    background-color: bisque;
+}
+```
+
+![alt text](images/images7.png)

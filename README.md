@@ -64,3 +64,44 @@ echo "<br />Приятного рабочего дня, вам!";
 Результат работы скрипта:
 
 ![alt text](images/image3.png)
+
+
+#Задание 3.
+
+Устанавливает переменную $varsta в значение 22.
+Использует условные операторы (if, elseif, else) для определения диапазона возраста и установки переменной $mesaj в соответствующее сообщение, зависящее от возраста.
+Затем использует тернарный оператор для вывода сообщения, включая имя (если оно задано), или использует "Anonymous", если имя не указано.
+
+![alt text](images/image4.png)
+
+Если убрать строку $nume = "Аня"; , то вывод будет следующим:
+
+![alt text](images/image5.png)
+
+#Задание 4.
+
+'switch(date("l")){
+    case "Monday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Tuesday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Wednesday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Thursday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Friday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Saturday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+    case "Sunday":
+        echo "Сегодня " . date("l") . "," . date("j, n, Y");
+        break;
+}'
+
+![alt text](images/image6.png)

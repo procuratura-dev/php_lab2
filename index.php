@@ -93,6 +93,24 @@ else{
 	</tbody>
 </table>
 
+<?php
+
+$currentDate = date('Y-m-d');
+$targetDate = '2024-03-01';
+
+if ($currentDate < $targetDate) {
+    $message = 'До целевой даты осталось время';
+} elseif ($currentDate == $targetDate) {
+    $message = 'Сегодня целевая дата!';
+} else {
+    $message = 'Целевая дата уже прошла';
+}
+
+
+echo 'Текущая дата: ' . $currentDate . '<br>';
+echo 'Целевая дата: ' . $targetDate . '<br>';
+echo 'Сообщение: ' . $message;
+?>
 
 </body>
 </html>

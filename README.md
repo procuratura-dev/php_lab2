@@ -111,6 +111,7 @@ switch(date("l")){
 ![alt text](images/image6.png)
 
 #Домашнее задание
+1)
 ```php
 $today = date("l");
 
@@ -181,3 +182,25 @@ table.iksweb th {
 ```
 
 ![alt text](images/image7.png)
+
+2)
+```php
+$currentDate = date('Y-m-d');
+$targetDate = '2024-03-01';
+
+if ($currentDate < $targetDate) {
+    $message = 'До целевой даты осталось время';
+} elseif ($currentDate == $targetDate) {
+    $message = 'Сегодня целевая дата!';
+} else {
+    $message = 'Целевая дата уже прошла';
+}
+
+
+echo 'Текущая дата: ' . $currentDate . '<br>';
+echo 'Целевая дата: ' . $targetDate . '<br>';
+echo 'Сообщение: ' . $message;
+```
+
+
+![alt text](images/image8.png)
